@@ -346,7 +346,7 @@ If you want to block access to bad bots / specific user-agents you can use this.
 
 I added some examples of bad bots to block access to.
 ]]
-local user_agent_blacklist_var = ngx.var.http_user_agent or ""
+local user_agent_blacklist_var = ngx.var.http_user_agent
 local user_agent_blacklist_table = {
 	{
 		"^$",
@@ -2409,7 +2409,7 @@ local function check_user_agent_blacklist(user_agent_table)
 		if value[2] == 4 then --regex lower case insensative
 			user_agent_blacklist_var = string.lower(user_agent_blacklist_var)
 		end
-		if string.match(user_agent_blacklist_var, value[1])then
+		if user_agent_blacklist_var and string.match(user_agent_blacklist_var, value[1])then
 			local output = ngx.exit(ngx.HTTP_FORBIDDEN) --deny user access
 			return output
 		end
