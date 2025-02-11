@@ -129,8 +129,7 @@ Or you can download the source code for [Nginx here](https://nginx.org/en/downlo
 
 ## About
 
-I inspired by Conor McKnight, who created the orginal Lua script (he was inspired by Cloudflare feature "I'm Under Attack Mode" https://www.cloudflare.com/). I was inspired by Cloudflare DDoS protection and wanted to create a similar feature for Nginx.
-
+I was inspired by Conor McKnight, who created the orginal Lua script (he was inspired by Cloudflare feature "I'm Under Attack Mode" https://www.cloudflare.com/). I was inspired by Cloudflare DDoS protection & mitigation solutions and wanted to create a similar feature in Nginx. Without the need of Nginx Plus.
 
 ```sh
 If you're under attack and have this feature enabled during the attack, visitors
@@ -268,7 +267,7 @@ This script can protect every web application ever built.
 - WordPress / Joomla / Drupal / Plone / ...
 - Magento / Shopify / WHMCS / OpenCart / Prestashop / ...
 - Atlassian / GitLab / ...
-- PHP / Python / scripts
+- PHP/ Symfony / Python / scripts
 - Social networks
 - Gaming networks servers sites
 - Forums / vBulletin / phpBB / MyBB / Simple Machines Forum / XenForo
